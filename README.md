@@ -104,12 +104,8 @@ plt.legend(loc='upper left')
 plt.show()
 # map the labels to a binary integer value
 y = np.where(y == 'Iris-setosa', 1, -1)
-
-
 x[:, 0] = (x[:, 0] - x[:, 0].mean()) / x[:, 0].std()
 x[:, 1] = (x[:, 1] - x[:, 1].mean()) / x[:, 1].std()
-
-
 # split the data
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.25,random_state=0)
 # train the model
@@ -124,7 +120,6 @@ plt.show()
  ```
  ## output :
  ![image](https://user-images.githubusercontent.com/94175324/231112022-a219eebb-7854-4ced-a3d3-2741cec3363b.png)
-
  ![image](https://user-images.githubusercontent.com/94175324/231108616-c6ba3bf0-5874-4dcc-9c5f-8390d85ba8a3.png)
 ![image](https://user-images.githubusercontent.com/94175324/231108753-d468b23d-d1d1-4ed7-b5d7-834e256fe91f.png)
 ## Result :
